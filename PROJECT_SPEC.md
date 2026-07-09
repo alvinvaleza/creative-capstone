@@ -5,7 +5,7 @@
 - **Type:** Academic creative capstone (reflective response to a global citizenship / cross-cultural / sustainability / wellness course)
 - **Profile name:** Alvin Valeza
 - **Format chosen:** Interactive webpage (built custom, not Wix/WordPress)
-- **Stack:** React 19 + TypeScript 6 + Tailwind CSS v4 + GSAP 3.15 (ScrollTrigger) + React Three Fiber (Drei) + Three.js
+- **Stack:** React 19 + TypeScript 6 + Tailwind CSS v4 + GSAP 3.15 (ScrollTrigger) + React Three Fiber (Drei) + Three.js + React Router (HashRouter)
 - **Build tool / workflow:** Vite 8 + OpenCode CLI (AI-assisted coding agent)
 - **Core idea:** The site walks through an 11-week learning journey (weeks 2–12), presented chronologically week by week. Each week displays the student's full reflective response — the most important lesson, student growth, professional perspective, and citizen perspective — rendered verbatim. There is no separate Synthesis page; the student/professional/citizen reflection is embedded within each week's own content.
 
@@ -29,7 +29,7 @@ Home
  │     ├── Week 10 — Ecological Literacy (Part 2)
  │     ├── Week 11 — Health and Wellness (Part 1)
  │     └── Week 12 — Health and Wellness (Part 2)
- ├── Documentation (3-phase gallery: planning, development, output screenshots; external GitHub + live site links)
+ ├── Documentation (3-phase gallery: planning, development, output screenshots; external GitHub link)
  └── Resources (37 references grouped by week with type icons and Open links)
 ```
 
@@ -193,7 +193,7 @@ src/
       Footer.tsx               — site footer with animated underline links
       ScrollProgress.tsx       — "Week N of 11" right-rail indicator (Journey page only)
     shared/
-      WeekPreviewCard.tsx      — week number, date, title; lift on hover, links to /journey#week-N
+      WeekPreviewCard.tsx      — week number, date, title; lift on hover, links to /journey with state-based scroll target
       SectionHeading.tsx       — serif headline wrapper
       Hero.tsx                 — reusable hero (title, subtitle, children slot for CTAs)
       ImageLightbox.tsx        — fullscreen image modal (Escape/backdrop to close, body scroll lock)
@@ -241,6 +241,9 @@ src/
 - [x] Documentation page: Vercel live site link removed (kept GitHub source only)
 - [x] Documentation images: all 3 phases populated (6 planning + 3 dev + 6 output)
 - [x] Documentation captions: refined to accurately describe actual Vercel/GitHub/terminal content
+- [x] Routing: switched from `BrowserRouter` to `HashRouter` to fix 404 on page refresh
+- [x] Routing: anchor links replaced with `scrollIntoView` + state-based scroll (WeekPreviewCard, Resources sidebar)
+- [x] Dev-1 image: renamed `.jpg` → `.png`, caption updated to "OpenCode CLI in the device terminal"
 
 ### Open
 - [ ] Confirm URLs for 8 resources currently marked "No link" on Resources page
