@@ -30,7 +30,7 @@ export const phases: DocPhase[] = [
     title: "Phase 2: Development",
     subtitle: "Building the site with OpenCode CLI — sessions, iterations, and technical decisions.",
     images: [
-      { filename: "dev-1.jpg", caption: "Pushing the initial project scaffold to GitHub", alt: "Pushing the initial project scaffold to GitHub" },
+      { filename: "dev-1.png", caption: "OpenCode CLI in the device terminal", alt: "OpenCode CLI in the device terminal" },
       { filename: "dev-2.jpg", caption: "Using OpenCode CLI to audit documentation images", alt: "Using OpenCode CLI to audit documentation images" },
       { filename: "dev-3.jpg", caption: "Reviewing the live site alongside the project spec", alt: "Reviewing the live site alongside the project spec" },
     ],
