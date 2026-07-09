@@ -4,7 +4,7 @@ import Hero from "../components/shared/Hero";
 import SectionHeading from "../components/shared/SectionHeading";
 import ImageLightbox from "../components/shared/ImageLightbox";
 import { phases, type DocImage } from "../data/documentation";
-import { ArrowRight, GithubLogo, Globe } from "@phosphor-icons/react";
+import { ArrowRight, GithubLogo } from "@phosphor-icons/react";
 import { usePageEnter } from "../hooks/usePageEnter";
 
 export default function Documentation() {
@@ -70,22 +70,13 @@ export default function Documentation() {
 
         <div className="fade-in flex flex-wrap justify-center gap-4 pt-4" style={{ y: 24, opacity: 0 }}>
           <a
-            href="https://github.com/dannielcanaryquipia/creative-capstone"
+            href="https://github.com/alvinvaleza/creative-capstone"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 border border-outline-variant/40 text-text-muted px-8 py-3 rounded-lg font-medium hover:border-secondary/40 hover:text-primary transition-all duration-300 active:scale-[0.97]"
           >
             <GithubLogo size={18} weight="duotone" className="transition-transform duration-300 group-hover:scale-110" />
             <span>View source on GitHub</span>
-          </a>
-          <a
-            href="https://creative-capstone.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 border border-outline-variant/40 text-text-muted px-8 py-3 rounded-lg font-medium hover:border-secondary/40 hover:text-primary transition-all duration-300 active:scale-[0.97]"
-          >
-            <Globe size={18} weight="duotone" className="transition-transform duration-300 group-hover:scale-110" />
-            <span>Visit live site</span>
           </a>
         </div>
       </section>
