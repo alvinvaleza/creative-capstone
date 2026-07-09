@@ -56,13 +56,13 @@ export default function Resources() {
                 const hasResources = grouped.has(w.number) && grouped.get(w.number)!.length > 0;
                 if (!hasResources) return null;
                 return (
-                  <a
+                  <button
                     key={w.number}
-                    href={`#week-${w.number}`}
-                    className="text-sm text-on-surface hover:text-secondary transition-colors"
+                    onClick={() => document.getElementById(`week-${w.number}`)?.scrollIntoView({ behavior: "smooth" })}
+                    className="text-sm text-on-surface hover:text-secondary transition-colors text-left"
                   >
                     Week {w.number}
-                  </a>
+                  </button>
                 );
               })}
             </nav>

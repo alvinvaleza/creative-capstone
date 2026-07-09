@@ -13,7 +13,8 @@ export default function WeekPreviewCard({
 }: Props) {
   return (
     <Link
-      to={`/journey#week-${number}`}
+      to="/journey"
+      state={{ scrollTo: number }}
       className="group block rounded-xl border border-outline-variant/30 bg-surface-container-lowest p-6 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:border-secondary/40 hover:-translate-y-1 hover:shadow-sm active:scale-[0.98]"
     >
       <div className="flex items-start justify-between mb-4">

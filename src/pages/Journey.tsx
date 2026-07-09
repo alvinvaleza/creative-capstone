@@ -1,11 +1,23 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import WeekSection from "../components/journey/WeekSection";
 import { weeks } from "../data/weeks";
 import { usePageEnter } from "../hooks/usePageEnter";
 
 export default function Journey() {
   const ref = useRef<HTMLDivElement>(null);
+  const location = useLocation();
   usePageEnter(ref);
+
+  useEffect(() => {
+    const scrollTo = (location.state as { scrollTo?: number })?.scrollTo;
+    if (scrollTo) {
+      const el = document.getElementById(`week-${scrollTo}`);
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 300);
+      }
+    }
+  }, [location.state]);
 
   return (
     <div ref={ref}>
