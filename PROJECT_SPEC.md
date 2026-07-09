@@ -89,7 +89,7 @@ All weeks render identically — no "quiet" or "pending" variants.
 2. 3-phase gallery — Planning (6 images), Development (3 images), Output (6 images), each in a responsive grid (`sm:grid-cols-2 lg:grid-cols-3`) with hover lift and border shift
 3. ImageLightbox — click any thumbnail for fullscreen zoom
 4. CTA into Journey
-5. External links row — GitHub source + Vercel live site (opens in new tab)
+5. External links row — GitHub source (opens in new tab)
 
 ### Resources
 Resources grouped by week (scroll-triggered fade-in) with sidebar week navigation. Each resource card shows:
@@ -205,7 +205,7 @@ src/
     Home.tsx                   — hero + core intent + week preview grid
     About.tsx                  — 3D bg + hero + context + gallery + philosophy + tech cards + sidebar + CTA
     Journey.tsx                — hero + 11 WeekSection components + ScrollProgress
-    Documentation.tsx          — hero + 3-phase gallery grid (planning/dev/output) with ImageLightbox + external GitHub/live links
+    Documentation.tsx          — hero + 3-phase gallery grid (planning/dev/output) with ImageLightbox + external GitHub link
     Resources.tsx              — hero + sidebar nav + resource cards grouped by week
   hooks/
     usePageEnter.ts            — shared hook: GSAP hero entrance + ScrollTrigger fade-in reveals
@@ -234,7 +234,14 @@ src/
 
 ---
 
-## 9. Open items
+## 9. Changelog / Open items
 
+### Resolved
+- [x] Documentation page: GitHub URL updated to `github.com/alvinvaleza/creative-capstone`
+- [x] Documentation page: Vercel live site link removed (kept GitHub source only)
+- [x] Documentation images: all 3 phases populated (6 planning + 3 dev + 6 output)
+- [x] Documentation captions: refined to accurately describe actual Vercel/GitHub/terminal content
+
+### Open
 - [ ] Confirm URLs for 8 resources currently marked "No link" on Resources page
 - [ ] Decide whether Wellness Continuum Self-Assessment file exists or needs to be created

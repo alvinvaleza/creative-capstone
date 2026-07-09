@@ -15,14 +15,14 @@ export const phases: DocPhase[] = [
   {
     number: 1,
     title: "Phase 1: Planning",
-    subtitle: "Papers, sketches, and initial plans mapped out by week before any code was written.",
+    subtitle: "Vercel deployment, Git repository setup, and project configuration captured during initial setup.",
     images: [
-      { filename: "planning-1.jpg", caption: "Week 2 & 3 — Global Citizenship planning notes", alt: "Planning notes for weeks 2 and 3" },
-      { filename: "planning-2.jpg", caption: "Week 4 & 5 — Cross-Cultural Understanding outline", alt: "Outline for weeks 4 and 5" },
-      { filename: "planning-3.jpg", caption: "Week 6 & 7 — Indigenous Understanding research", alt: "Research notes for weeks 6 and 7" },
-      { filename: "planning-4.jpg", caption: "Week 8 — Entrepreneurship & Technology plan", alt: "Planning for week 8" },
-      { filename: "planning-5.jpg", caption: "Week 9 & 10 — Ecological Literacy framework", alt: "Framework for weeks 9 and 10" },
-      { filename: "planning-6.jpg", caption: "Week 11 & 12 — Health and Wellness structure", alt: "Structure for weeks 11 and 12" },
+      { filename: "planning-1.jpg", caption: "Setting up the production deployment on Vercel", alt: "Setting up the production deployment on Vercel" },
+      { filename: "planning-2.jpg", caption: "Confirming deployment status and Git connection", alt: "Confirming deployment status and Git connection" },
+      { filename: "planning-3.jpg", caption: "Configuring the Vite project during import", alt: "Configuring the Vite project during import" },
+      { filename: "planning-4.jpg", caption: "Importing the GitHub repository into Vercel", alt: "Importing the GitHub repository into Vercel" },
+      { filename: "planning-5.jpg", caption: "Documenting the project structure in the README", alt: "Documenting the project structure in the README" },
+      { filename: "planning-6.jpg", caption: "Reviewing the repo setup at the workstation", alt: "Reviewing the repo setup at the workstation" },
     ],
   },
   {
@@ -30,9 +30,9 @@ export const phases: DocPhase[] = [
     title: "Phase 2: Development",
     subtitle: "Building the site with OpenCode CLI — sessions, iterations, and technical decisions.",
     images: [
-      { filename: "dev-1.jpg", caption: "Initial scaffold and route setup", alt: "OpenCode CLI initial scaffold" },
-      { filename: "dev-2.jpg", caption: "Week content population and GSAP animations", alt: "Adding week content and animations" },
-      { filename: "dev-3.jpg", caption: "Dark mode, 3D background, and polish", alt: "Dark mode and 3D background implementation" },
+      { filename: "dev-1.jpg", caption: "Pushing the initial project scaffold to GitHub", alt: "Pushing the initial project scaffold to GitHub" },
+      { filename: "dev-2.jpg", caption: "Using OpenCode CLI to audit documentation images", alt: "Using OpenCode CLI to audit documentation images" },
+      { filename: "dev-3.jpg", caption: "Reviewing the live site alongside the project spec", alt: "Reviewing the live site alongside the project spec" },
     ],
   },
   {
