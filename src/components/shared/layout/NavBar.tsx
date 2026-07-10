@@ -99,7 +99,7 @@ export default function NavBar() {
 
       {/* Mobile side panel — rendered outside <nav> */}
       <div
-        className={`md:hidden fixed top-0 left-0 h-full w-[85vw] bg-primary dark:bg-white/[0.04] dark:backdrop-blur-2xl dark:border-r dark:border-white/[0.06] z-50 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+        className={`md:hidden fixed top-0 left-0 h-full w-[85vw] bg-primary z-50 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
